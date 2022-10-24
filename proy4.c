@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <stdbool.h>
+#include "minimo.h"
 
 void holaHasta (int n){
     
@@ -15,13 +16,13 @@ void holaHasta (int n){
 int main (void){
     int n=0;
     
-    printf("porfavo ingrese un numero ");
-    
+    printf("porfavor ingrese un numero ");
     scanf("%i",&n);
-    
     assert(n>0);
 
     holaHasta(n);
+    printf("%i",minimo(1,2));
+    
 
     return 0;
 }
